@@ -1,17 +1,28 @@
-echo "from math_function import add
-
- def main():
-
-     data_1 = int(input("masukkan input 1 :"))
-     data_2 = int(input("masukkan input 2 :"))
-     operator = input("masukkan operator :")
-
-     if operator == "+":
-         result = add(data_1, data_2)
-
-     print("{} {} {} = {} ".format(data_1, operator, data_2, result))
+from math_function import *
 
 
- if _name_ == "_main_":
-     print("Hello Main !")
-     main()" > main.py 
+def main():
+
+    data_1 = int(input("Masukkan Input 1 : "))
+    data_2 = int(input("Masukkan Input 2 : "))
+    operator = input("Masukkan Operator (hanya + , * , /) : ")
+
+    if operator == "+":
+        result = add(data_1, data_2)
+        print("{} {} {} = {} ".format(data_1, operator, data_2, result))
+
+    elif operator == "*":
+        result = multiplication(data_1, data_2)
+        print("{} {} {} = {} ".format(data_1, operator, data_2, result))
+
+    elif operator == "/":
+        result = division(data_1, data_2)
+        print("{} {} {} = {} ".format(data_1, operator, data_2, result))
+
+    else:
+        print("Maaf ya, operator belum ditambahkan hehe")
+
+
+if _name_ == "_main_":
+    print("Hello Main !")
+    main()

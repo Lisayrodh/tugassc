@@ -1,2 +1,10 @@
-echo "def add(a, b):
-     return a + b" > math_function.py 
+def add(a, b):
+    return a + b
+
+
+def multiplication(a, b):
+    return a * b
+
+
+def division(a, b):
+    return a / b
